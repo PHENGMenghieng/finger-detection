@@ -48,7 +48,7 @@ def count_fingers(hand_landmarks, handedness):
 
 def main():
     url = "http://10.30.0.252:8080/stream"
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(url)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
